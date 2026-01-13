@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>加入小组申请</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; padding-top: 50px; background: #f4f7f6; }
+        .card { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); width: 100%; max-width: 400px; }
+        input { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; }
+        button { width: 100%; padding: 10px; background: #0088cc; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h3>小组入组申请</h3>
+        <p style="font-size: 13px; color: #666;">请输入你的 LINUXDO id(不是昵称哦~)</p>
+        <input type="text" id="username" placeholder="例如: CuteCat">
+        <button onclick="submit()">提交申请</button>
+        <p id="msg" style="text-align: center; font-size: 14px;"></p>
+    </div>
+
+    <script>
+        async function submit() {
+            const username = document.getElementById('username').value.trim();
+            if(!username) return alert("请输入用户名");
+            
+            const res = await fetch('api.php?action=apply', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: 'username=' + encodeURIComponent(username)
+            });
+            const data = await res.json();
+            document.getElementById('msg').innerText = data.msg;
+            if(data.success) document.getElementById('username').value = '';
+        }
+    </script>
+</body>
+</html>
