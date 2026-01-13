@@ -13,7 +13,7 @@
     'use strict';
 
     const CONFIG = {
-        groupId: "103",
+        groupId: "103", //请替换为你的板块id！！你的板块id具体是多少，请在手动邀请时拦截请求查看。
         apiBase: "https://apply.dxde.de/api.php",
         autoInterval: 10000, // 10秒检查一次
         maxLogItems: 20      // 最多保存最近20条记录
