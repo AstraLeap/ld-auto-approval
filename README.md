@@ -14,6 +14,7 @@ sudo apt install nginx php-fpm php-sqlite3 -y
 ```
 
 ## 3.Nginx 站点配置
+具体方法可以请教大模型老师
 
 ## 4.目录权限设置
 Nginx 的用户（通常是 www-data）必须拥有你网站目录的写权限。
@@ -24,7 +25,7 @@ sudo chmod -R 755 /path/to/yourfolder
 ```
 
 ## 5.https证书配置（可选）
-
+推荐certbox
 
 # 浏览器端配置
 1.请将油猴脚本开头的的groupId替换为你的板块id！！你的板块id具体是多少，请在手动邀请时拦截请求查看。
