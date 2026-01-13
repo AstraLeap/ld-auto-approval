@@ -28,7 +28,12 @@ sudo chmod -R 755 /path/to/yourfolder
 推荐certbox
 
 # 浏览器端配置
-1. 请将油猴脚本开头的的groupId替换为你的板块id！！你的板块id具体是多少，请在手动邀请时拦截请求查看。
+1. 请将油猴脚本开头的的groupId替换为你的板块id！！你的板块id具体是多少，请在手动邀请时，在F12拦截网络请求，寻找members.json，然后groupId在这里面
+    ```
+    https://linux.do/groups/xxx/members.json
+    ```
+    这个xxx就是你的板块id
+
 2. 同时apiBase的apply.dxde.de替换为你自己的域名
 3. 如果挂机时油猴脚本被杀，可以使用PowerToys可以将网站固定在前台。
 4. 进入板块管理后台页面，就可以自动运行脚本啦
