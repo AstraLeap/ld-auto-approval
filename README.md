@@ -35,6 +35,6 @@ sudo chmod -R 755 /path/to/yourfolder
     ```
     这个xxx就是你的板块groupId
 
-2. 同时apiBase的apply.dxde.de替换为你自己的域名
+2. 同时apiBase的yourdomain替换为你自己的域名
 3. 如果挂机时油猴脚本被杀，可以使用PowerToys可以将网站固定在前台。
 4. 进入板块管理后台页面，就可以自动运行脚本啦
