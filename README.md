@@ -4,7 +4,7 @@ linuxdo虫洞自动审核工具，需要自己有服务器，配置一个网站�
 
 # 服务器端配置
 ## 1.域名解析 (DNS)
-不过多解释了
+具体操作可以询问大模型老师
 
 ## 2. 环境安装
 ```
@@ -14,7 +14,7 @@ sudo apt install nginx php-fpm php-sqlite3 -y
 ```
 
 ## 3.Nginx 站点配置
-具体方法可以请教大模型老师
+询问大模型老师+1
 
 ## 4.目录权限设置
 Nginx 的用户（通常是 www-data）必须拥有你网站目录的写权限。
@@ -28,6 +28,7 @@ sudo chmod -R 755 /path/to/yourfolder
 推荐certbox
 
 # 浏览器端配置
+0. 需要使用油猴脚本，具体使用方法同样可以询问大模型老师
 1. 请将油猴脚本开头的的groupId替换为你的板块id！！你的板块id具体是多少，请在手动邀请时，在F12拦截网络请求，寻找并查看members.json，寻找类似下面的内容
     ```
     https://linux.do/groups/xxx/members.json
